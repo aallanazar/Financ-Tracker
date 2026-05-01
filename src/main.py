@@ -1,5 +1,5 @@
-from storage import load_expenses, save_expenses
-from logic import add_expense_item, calculate_total
+from src.storage import load_expenses, save_expenses
+from src.logic import add_expense_item, calculate_total
 
 def main():
     expenses = load_expenses()
