@@ -13,7 +13,6 @@ def load_expenses():
         return []
 
 def save_expenses(expenses):
-    """Speichert die Liste der Ausgaben in die JSON-Datei."""
     try:
         with open(FILENAME, "w", encoding="utf-8") as file:
             json.dump(expenses, file, indent=4, ensure_ascii=False)
